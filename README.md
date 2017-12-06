@@ -1,3 +1,19 @@
+# ccc 注意事項
+
+如果用 fork ，要先砍掉 .git 資料夾，然後重做下列動作。
+
+```
+   7 git init
+   9 git remote add origin https://github.com/ccckmit/electron-updater-example-1.git
+  11 git add -A
+  12 git commit -m "init"
+  16 git push --force origin master
+  18 npm run publish
+```
+
+
+## 原始專案的 README.md
+
 This repo contains the **bare minimum code** to have an auto-updating Electron app using [`electron-updater`](https://github.com/electron-userland/electron-builder/tree/master/packages/electron-updater) with releases stored on GitHub.
 
 If you can't use GitHub, you can use other providers:
